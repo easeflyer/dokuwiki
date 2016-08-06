@@ -138,7 +138,7 @@ $conf['rss_show_summary'] = 1;           //Add revision summary to title? 0|1
 
 /* Advanced Settings */
 $conf['updatecheck'] = 1;                //automatically check for new releases?
-$conf['userewrite']  = 0;                //this makes nice URLs: 0: off 1: .htaccess 2: internal
+$conf['userewrite']  = 1;                //this makes nice URLs: 0: off 1: .htaccess 2: internal
 $conf['useslash']    = 0;                //use slash instead of colon? only when rewrite is on
 $conf['sepchar']     = '_';              //word separator character in page names; may be a
                                          //  letter, a digit, '_', '-', or '.'.

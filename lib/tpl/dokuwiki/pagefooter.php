@@ -7,6 +7,7 @@ function hasPage(){
 	$pages = array("id=start","do=admin");
 	foreach($pages as $page)
 		if(strpos($_SERVER["QUERY_STRING"],$page)!==false) return true;
+	if(empty($_SERVER["QUERY_STRING"])) return true;
 	return false;
 }
 ?>
