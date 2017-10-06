@@ -10,4 +10,5 @@
 
 
 ease:$1$dPWWiuBV$FKHV1RCeGGvowrwyU8sQ/.:ease:easenet@gmail.com:admin,user
-格格巫:$1$DKL39t6N$b4NKglk8q6ENHVnug3/dR/:格格巫:598762861@q.com:user
+demo:$1$cLYwoRvD$ZIBpqd8Xq6O.VgG3SJApt1:demo:qzhlan@163.com:user
+格格巫:$1$pd515hts$/ibXGgGrOl5bFSA3971ox.:格格巫:598762861@qq.com:user
