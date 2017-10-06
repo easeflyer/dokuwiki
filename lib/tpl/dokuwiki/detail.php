@@ -27,7 +27,6 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 </head>
 
 <body>
-    <!--[if lte IE 8 ]><div id="IE8"><![endif]-->
     <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?>">
 
         <?php include('tpl_header.php') ?>
@@ -76,7 +75,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
                     <?php endif; ?>
                 </div>
                 <!-- detail stop -->
-                <?php include('pagefooter.php') ?>
+                <?php tpl_includeFile('pagefooter.html') ?>
                 <?php tpl_flush() ?>
 
                 <?php /* doesn't make sense like this; @todo: maybe add tpl_imginfo()?
@@ -119,7 +118,5 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
         <?php include('tpl_footer.php') ?>
     </div></div><!-- /site -->
-
-    <!--[if lte IE 8 ]></div><![endif]-->
 </body>
 </html>

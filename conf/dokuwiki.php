@@ -20,7 +20,7 @@ $conf['template']    = 'dokuwiki';         //see lib/tpl directory
 $conf['tagline']     = '';                //tagline in header (if template supports it)
 $conf['sidebar']     = 'sidebar';         //name of sidebar in root namespace (if template supports it)
 $conf['license']     = 'cc-by-nc-sa';     //see conf/license.php
-$conf['savedir']     = '../dokuwiki_data';//where to store all the files
+$conf['savedir']     = './data';          //where to store all the files
 $conf['basedir']     = '';                //absolute dir from serveroot - blank for autodetection
 $conf['baseurl']     = '';                //URL to server including protocol - blank for autodetect
 $conf['cookiedir']   = '';                //path to use in cookies - blank for basedir
@@ -138,7 +138,7 @@ $conf['rss_show_summary'] = 1;           //Add revision summary to title? 0|1
 
 /* Advanced Settings */
 $conf['updatecheck'] = 1;                //automatically check for new releases?
-$conf['userewrite']  = 1;                //this makes nice URLs: 0: off 1: .htaccess 2: internal
+$conf['userewrite']  = 0;                //this makes nice URLs: 0: off 1: .htaccess 2: internal
 $conf['useslash']    = 0;                //use slash instead of colon? only when rewrite is on
 $conf['sepchar']     = '_';              //word separator character in page names; may be a
                                          //  letter, a digit, '_', '-', or '.'.
@@ -158,6 +158,7 @@ $conf['readdircache'] = 0;               //time cache in second for the readdir 
 
 /* Network Settings */
 $conf['dnslookups'] = 1;                 //disable to disallow IP to hostname lookups
+$conf['jquerycdn']  = 0;                 //use a CDN for delivering jQuery?
 // Proxy setup - if your Server needs a proxy to access the web set these
 $conf['proxy']['host']    = '';
 $conf['proxy']['port']    = '';

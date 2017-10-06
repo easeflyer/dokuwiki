@@ -17,7 +17,6 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="content-language" content="zh-CN" />
     <title><?php tpl_pagetitle() ?> [<?php echo strip_tags($conf['title']) ?>]</title>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
     <?php tpl_metaheaders() ?>
@@ -27,7 +26,6 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 </head>
 
 <body>
-    <!--[if lte IE 8 ]><div id="IE8"><![endif]-->
     <div id="dokuwiki__site"><div id="dokuwiki__top" class="site <?php echo tpl_classes(); ?> <?php
         echo ($showSidebar) ? 'showSidebar' : ''; ?> <?php echo ($hasSidebar) ? 'hasSidebar' : ''; ?>">
 
@@ -60,8 +58,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                     <!-- wikipage start -->
                     <?php tpl_content() ?>
                     <!-- wikipage stop -->
-                    <?php /* tpl_includeFile('pagefooter.html')*/ ?>
-		    <?php include('pagefooter.php') ?> 
+                    <?php tpl_includeFile('pagefooter.html') ?>
                 </div>
 
                 <div class="docInfo"><?php tpl_pageinfo() ?></div>
@@ -108,6 +105,5 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 
     <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
     <div id="screen__mode" class="no"></div><?php /* helper to detect CSS media query in script.js */ ?>
-    <!--[if lte IE 8 ]></div><![endif]-->
 </body>
 </html>
