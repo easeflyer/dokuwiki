@@ -52,7 +52,7 @@ $conf['sneaky_index']= 0;                 //check for namespace read permission 
 $conf['hidepages']   = '';                //Regexp for pages to be skipped from RSS, Search and Recent Changes
 
 /* Authentication Settings */
-$conf['useacl']      = 0;                //Use Access Control Lists to restrict access?
+$conf['useacl']      = 1;                //Use Access Control Lists to restrict access?
 $conf['autopasswd']  = 1;                //autogenerate passwords and email them to user
 $conf['authtype']    = 'authplain';      //which authentication backend should be used
 $conf['passcrypt']   = 'smd5';           //Used crypt method (smd5,md5,sha1,ssha,crypt,mysql,my411)

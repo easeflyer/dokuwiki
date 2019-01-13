@@ -26,6 +26,7 @@ if (!defined('DOKU_INC')) die();
             src="<?php echo tpl_basedir(); ?>images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
         <a href="http://dokuwiki.org/" title="Driven by DokuWiki" <?php echo $target?>><img
             src="<?php echo tpl_basedir(); ?>images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
+	<br /><a href="http://www.miitbeian.gov.cn">冀ICP备13009617号</a>
     </div>
 </div></div><!-- /footer -->
 

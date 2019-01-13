@@ -24,22 +24,17 @@ function hasPage(){
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!-- google adsense end -->
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="<?php echo hsc($ID) ?>"
-	 data-title="<?php echo hsc($ID) ?>" data-url="http://www.ushow.org/doku.php?id=<?php echo hsc($ID) ?>"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"ushow"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
+<!-- 畅言 start -->
+<!--PC和WAP自适应版-->
+<?php global $INFO; ?>
+<div id="SOHUCS" sid="<?php echo $INFO['id']; ?>"></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cytjueSwG'; 
+var conf = 'prod_05011160d014ac58c6e1f9fe7363604f'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+<!-- 畅言 end -->
 
 <?php endif; ?>

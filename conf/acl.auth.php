@@ -12,3 +12,7 @@ blog:ease:home	ease	2
 blog:ease:home	@ALL	0
 blog:ggw:home	格格巫	2
 blog:ggw:home	@ALL	0
+project:ustudy:*	@ustudy	8
+project:ustudy:*	@ALL	0
+project:liangchuang:*	@lc	8
+project:liangchuang:*	@ALL	0

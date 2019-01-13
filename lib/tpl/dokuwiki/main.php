@@ -16,6 +16,16 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82842196-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-82842196-1');
+    </script>
+
     <meta charset="utf-8" />
     <title><?php tpl_pagetitle() ?> [<?php echo strip_tags($conf['title']) ?>]</title>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
@@ -58,7 +68,9 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                     <!-- wikipage start -->
                     <?php tpl_content() ?>
                     <!-- wikipage stop -->
-                    <?php tpl_includeFile('pagefooter.html') ?>
+		    <!-- modi by ease-->
+                    <!-- ?php tpl_includeFile('pagefooter.html') ? -->
+        	    <?php include('pagefooter.php') ?>
                 </div>
 
                 <div class="docInfo"><?php tpl_pageinfo() ?></div>
